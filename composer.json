@@ -1,0 +1,21 @@
+{
+    "name": "olakunlevpn/phpcapcha",
+    "description": "An advanced PHP Captcha generator with custom font and color support.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olakunlevpn",
+            "email": "Olakunlevpn@live.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Olakunlevpn\\Captcha\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "ext-gd": "*"
+    }
+}
