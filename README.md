@@ -174,6 +174,20 @@ Check the `examples/` directory for full implementations:
 - **Bootstrap 5** (`examples/bootstrap.php`)
 - **jQuery/AJAX** (`examples/jquery.php`)
 
+## AI assistant integration
+
+This repository includes an `AGENTS.md` file specifically designed for AI assistants (like GitHub Copilot, Cursor, or Claude). If you're using an AI tool to help with your Laravel project:
+
+- **Point your AI assistant to the AGENTS.md file** when asking about `phpcapcha` optimization.
+- The file contains detailed guidance for analyzing components and determining eligibility.
+- **Use it for automated analysis** - AI assistants can help audit your entire component library.
+
+**Example prompts for AI assistants:**
+
+- "Using the `AGENTS.md` file, analyze my components and tell me which can use `phpcapcha`"
+- "Help me add `phpcapcha` to all eligible components following the guidelines"
+- "Check if this component is safe for captcha protection based on `AGENTS.md`"
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
