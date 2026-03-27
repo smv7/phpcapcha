@@ -227,7 +227,6 @@ class Captcha
             }
         }
         
-        imagedestroy($this->image);
         $this->image = $img2;
     }
 
@@ -237,7 +236,6 @@ class Captcha
         header('Cache-Control: no-cache, no-store, must-revalidate');
         header('Content-Type: image/png');
         imagepng($this->image);
-        imagedestroy($this->image);
     }
     
     public function getBase64(): string 
@@ -246,7 +244,6 @@ class Captcha
         ob_start();
         imagepng($this->image);
         $data = ob_get_clean();
-        imagedestroy($this->image);
         return 'data:image/png;base64,' . base64_encode($data);
     }
 
@@ -254,7 +251,6 @@ class Captcha
     {
         if (!isset($this->image)) throw new Exception("Image not created.");
         $result = imagepng($this->image, $path);
-        imagedestroy($this->image);
         return $result;
     }
 }
